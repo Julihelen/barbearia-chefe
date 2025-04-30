@@ -1,9 +1,6 @@
 package br.com.ifpe.barbearia_api.api.cliente;
 
 import java.time.LocalDate;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import br.com.ifpe.barbearia_api.modelo.cliente.Cliente;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +15,6 @@ public class ClienteRequest {
 
     private String nome;
     
-    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
     
     private String cpf;
